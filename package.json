@@ -1,6 +1,14 @@
 {
   "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "global": "^4.3.2",
     "live-server": "^1.2.0"
-  }
+  },
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/piyushabbi/indecision-app.git",
+  "author": "Piyush Abbi",
+  "license": "MIT"
 }
