@@ -139,16 +139,47 @@ var AddOptions = function (_React$Component5) {
   function AddOptions() {
     _classCallCheck(this, AddOptions);
 
-    return _possibleConstructorReturn(this, (AddOptions.__proto__ || Object.getPrototypeOf(AddOptions)).apply(this, arguments));
+    var _this5 = _possibleConstructorReturn(this, (AddOptions.__proto__ || Object.getPrototypeOf(AddOptions)).call(this));
+
+    _this5.state = {
+      inputVal: ''
+    };
+    _this5.onChangeHandler = _this5.onChangeHandler.bind(_this5);
+    return _this5;
   }
 
   _createClass(AddOptions, [{
+    key: 'onChangeHandler',
+    value: function onChangeHandler(e) {
+      this.setState({
+        inputVal: e.target.value
+      });
+    }
+  }, {
+    key: 'onSubmitHandler',
+    value: function onSubmitHandler(e) {
+      e.preventDefault();
+      var $val = e.target.elements.option.value;
+      console.log($val ? $val : 'Empty Val!');
+    }
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
-        'div',
-        null,
-        'Add Options Component Here'
+        'form',
+        { onSubmit: this.onSubmitHandler },
+        React.createElement('input', {
+          type: 'text',
+          name: 'option',
+          value: this.state.inputVal,
+          placeholder: 'Enter Some Options',
+          onChange: this.onChangeHandler
+        }),
+        React.createElement(
+          'button',
+          null,
+          'Add Option'
+        )
       );
     }
   }]);
