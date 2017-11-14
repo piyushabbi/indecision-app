@@ -58,8 +58,8 @@ class AddOptions extends React.Component {
   }
   onSubmitHandler(e) {
     e.preventDefault();
-    const $val = e.target.elements.option.value; 
-    console.log( $val ? $val : 'Empty Val!' ); 
+    const val = e.target.elements.option.value; 
+    alert( val ? `${val} submitted!` : 'Empty Val!' ); 
   }
   render() {
     return (

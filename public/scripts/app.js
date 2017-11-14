@@ -159,8 +159,8 @@ var AddOptions = function (_React$Component5) {
     key: 'onSubmitHandler',
     value: function onSubmitHandler(e) {
       e.preventDefault();
-      var $val = e.target.elements.option.value;
-      console.log($val ? $val : 'Empty Val!');
+      var val = e.target.elements.option.value;
+      alert(val ? val + ' submitted!' : 'Empty Val!');
     }
   }, {
     key: 'render',
