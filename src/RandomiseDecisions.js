@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 /**
  * RandomiseDecisions Component
  * This button will randomly select the decisions for the user.
