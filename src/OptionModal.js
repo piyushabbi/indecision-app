@@ -6,8 +6,9 @@ export const OptionModal = (props) => (
   <Modal 
     isOpen={!!props.selectedOption} 
     contentLabel='Selected Option'
+    onRequestClose={props.modalHandler}
   >
-    <h3>Selected Option</h3>
+    <h2>Selected Option</h2>
     {
       props.selectedOption && <p>{props.selectedOption}</p>
     }
