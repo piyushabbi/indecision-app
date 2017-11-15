@@ -5,4 +5,9 @@ import React from 'react';
  * This is a stateless header component.
  * @returns {JSX}
  */
-export const Header = () => <h1>Indecision App</h1>;
+export const Header = () => (
+  <div className="header">
+    <h1 className="header__title">Indecision App</h1>
+    <h2 className="header__subtitle">Put your decisions within...</h2>
+  </div>
+);

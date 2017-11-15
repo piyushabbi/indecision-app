@@ -7,6 +7,10 @@ import { ListOptions } from './ListOptions.js';
 import { TotalDecisons } from './TotalDecisions.js';
 import { AddDecisions } from './AddDecisions.js';
 import { OptionModal } from './OptionModal';
+
+import 'normalize-css/normalize.css';
+import './styles/styles.scss'
+
 /**
  * Indecision App Component
  * This is the wrapper for our application. Each component is rendered inside it.
