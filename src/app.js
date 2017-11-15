@@ -32,15 +32,10 @@ class IndecisionApp extends React.Component {
       decisions: text
     })
   }
-  submitFormValue (val) {
-    console.log(val);
-    console.log('Old', this.state.decisions);
-    
+  submitFormValue (val) {    
     let addedDecision = this.state.decisions.slice();    
     addedDecision.push(val);   
     this.setState({decisions:addedDecision})
-
-    console.log('New', this.state.decisions)
   }
   render () {
     return <section>
